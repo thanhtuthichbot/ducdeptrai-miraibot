@@ -97,15 +97,15 @@ const fs = global.nodemodule["fs-extra"];
  "https://i.imgur.com/ovfmT5W.jpg",
  "https://i.imgur.com/vrVWU0V.jpg",
   ];
-  var max = Math.floor(Math.random() * 6);  
+ var max = Math.floor(Math.random() * 6);  
   var min = Math.floor(Math.random() * 2);
   var data = await Currencies.getData(event.senderID);
   var exp =  data.exp;
   var money = data.money
-      if(money < 100) api.sendMessage("Bạn cần 100 đô để xem ảnh ?",event.threadID,event.messageID)
+      if(money < 250000) api.sendMessage("Nghèo mà dê, 250000 đô 1 tấm, đưa tiền r gửi",event.threadID,event.messageID)
           else {
-   Currencies.setData(event.senderID, options = {money: money - 100})
-   var callback = () => api.sendMessage({body:`Suốt ngày dú dú😼\n» Số dư: -100 đô «\n📩Facebook LeNangHoangDuc`,attachment: fs.createReadStream(__dirname + "/cache/5.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/5.jpg")); 
+   Currencies.setData(event.senderID, options = {money: money - 250000})
+   var callback = () => api.sendMessage({body:`Suốt ngày dú dú😼\n» Số dư: -250000 đô nha «`,attachment: fs.createReadStream(__dirname + "/cache/5.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/5.jpg")); 
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/5.jpg")).on("close",() => callback());
    }
 };

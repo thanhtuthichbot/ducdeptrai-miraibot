@@ -1,12 +1,12 @@
-/**
-* @author BuiChiThong
+﻿/**
+* @author N.Duc
 * @warn Vui lòng không sửa code hoặc sửa credits tôn trọng người viết cảm ơn !
 */
 module.exports.config = {
   name: "girlnude",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "BuiChiThong",
+  credits: "N.Duc",
   description: "Random Ảnh Nude Gái Xinh Cực Bổ Mắt ( Lưu Ý Đây Là Lệnh Ảnh 18+ Cân Nhắc Trước Khi Sử Dụng)",
   commandCategory: "Hình Ảnh",
   usages: "girlnude",
@@ -116,6 +116,15 @@ const fs = global.nodemodule["fs-extra"];
 "https://i.imgur.com/Urx9Ijl.jpg",
 "https://i.imgur.com/QYGOZuK.jpg",
   ];
-	 var callback = () => api.sendMessage({body:`[ Source By BuiChiThong ]\n Vì Đây Là Lệnh 18+ Nếu Có Thành Viên Sử Dụng Lệnh Này Nhiều Lần Gây Ức Chế Hãy Báo Cho Admin Bot Bùi Chí Thông Cảm Ơn!`,attachment: fs.createReadStream(__dirname + "/cache/5.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/5.jpg"));	
+	var max = Math.floor(Math.random() * 6);  
+  var min = Math.floor(Math.random() * 2);
+  var data = await Currencies.getData(event.senderID);
+  var exp =  data.exp;
+  var money = data.money
+      if(money < 250000) api.sendMessage("Nghèo mà dê, 250000 đô 1 tấm, đưa tiền r gửi",event.threadID,event.messageID)
+          else {
+   Currencies.setData(event.senderID, options = {money: money - 250000})
+   var callback = () => api.sendMessage({body:`[Admin Lê Năng Hoàng Đức] á à tao bắt được 1 đứa tà dâm😼\n» Số dư: -250000 đô nha «`,attachment: fs.createReadStream(__dirname + "/cache/5.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/5.jpg")); 
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/5.jpg")).on("close",() => callback());
-   };
+   }
+};

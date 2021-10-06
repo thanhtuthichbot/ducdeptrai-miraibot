@@ -1,4 +1,4 @@
-module.exports.config = {
+﻿module.exports.config = {
   name: "gxinh",
   version: "1.0.0",
   hasPermssion: 0,
@@ -49,6 +49,15 @@ const fs = global.nodemodule["fs-extra"];
 "https://i.postimg.cc/bwynNDvx/240497080-371863711091066-3650837696998993956-n.jpg",
 "https://i.postimg.cc/s28GcT4m/240996627-3018074361783520-1374492060414132441-n.jpg",
      ];
-     var callback = () => api.sendMessage({body:`Random ảnh theo gu của chủ bot ^^`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"));  
-      return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/1.jpg")).on("close",() => callback());
-   };
+     var max = Math.floor(Math.random() * 6);  
+  var min = Math.floor(Math.random() * 2);
+  var data = await Currencies.getData(event.senderID);
+  var exp =  data.exp;
+  var money = data.money
+      if(money < 250000) api.sendMessage("Nghèo mà dê, 250000 đô 1 tấm, đưa tiền r gửi",event.threadID,event.messageID)
+          else {
+   Currencies.setData(event.senderID, options = {money: money - 250000})
+   var callback = () => api.sendMessage({body:`[Admin Lê Năng Hoàng Đức] á à tao bắt được 1 đứa tà dâm😼\n» Số dư: -250000 đô nha «`,attachment: fs.createReadStream(__dirname + "/cache/5.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/5.jpg")); 
+      return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/5.jpg")).on("close",() => callback());
+   }
+};

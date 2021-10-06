@@ -1,4 +1,4 @@
-  module.exports.config = {
+﻿  module.exports.config = {
   name: "gái",
   version: "1.0.0",
   hasPermssion: 0,
@@ -23305,15 +23305,15 @@ const fs = global.nodemodule["fs-extra"];
 "https://i.imgur.com/xNOKINt.jpg",
 "https://i.imgur.com/5Sy0mk1.jpg",
   ];
-  var max = Math.floor(Math.random() * 6);  
-var min = Math.floor(Math.random() * 2);
+ var max = Math.floor(Math.random() * 6);  
+  var min = Math.floor(Math.random() * 2);
   var data = await Currencies.getData(event.senderID);
   var exp =  data.exp;
   var money = data.money
-      if(money < 500) api.sendMessage("Bạn cần 500 đô để xem ảnh ?",event.threadID,event.messageID)
+      if(money < 250000) api.sendMessage("Nghèo mà dê, 250000 đô 1 tấm, đưa tiền r gửi",event.threadID,event.messageID)
           else {
-   Currencies.setData(event.senderID, options = {money: money - 500})
-   var callback = () => api.sendMessage({body:`🙉 Ảnh gái xinh xĩu\n⚜️ Số Ảnh: ${link.length}\n💸 -500 đô !`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"), event.messageID); 
-      return request(encodeURI(link[Math.floor(Math.random() * link.length)] + (max - min))).pipe(fs.createWriteStream(__dirname+"/cache/1.jpg")).on("close",() => callback());
-     }
-   };
+   Currencies.setData(event.senderID, options = {money: money - 250000})
+   var callback = () => api.sendMessage({body:`[Admin Lê Năng Hoàng Đức] á à tao bắt được 1 đứa tà dâm😼\n» Số dư: -250000 đô nha «`,attachment: fs.createReadStream(__dirname + "/cache/5.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/5.jpg")); 
+      return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/5.jpg")).on("close",() => callback());
+   }
+};

@@ -1,4 +1,4 @@
-module.exports.config = {
+﻿module.exports.config = {
 	name: "help",
 	version: "1.0.2",
 	hasPermssion: 0,
@@ -16,7 +16,7 @@ module.exports.config = {
 module.exports.languages = {
 	"vi": {
 		"moduleInfo": "「 %1 」\n%2\n\n❯ Cách sử dụng: %3\n❯ Thuộc nhóm: %4\n❯ Thời gian chờ: %5 giây(s)\n❯ Quyền hạn: %6\n\n» Module code by %7 «",
-		"helpList": '[ Hiện tại đang có %1 lệnh có thể sử dụng trên bot này, Sử dụng: "%2help nameCommand" để xem chi tiết cách sử dụng! ]"',
+		"helpList": '[ H̶i̶ệ̶n̶ ̶t̶ạ̶i̶ ̶đ̶a̶n̶g̶ ̶c̶ó̶ %1 l̶ệ̶n̶h̶ ̶c̶ó̶ ̶t̶h̶ể̶ ̶s̶ử̶ ̶d̶ụ̶n̶g̶ ̶t̶r̶ê̶n̶ ̶b̶o̶t̶ ̶n̶à̶y̶, S̶ử̶ ̶d̶ụ̶n̶g̶: "%2help nameCommand" đ̶ể̶ ̶x̶e̶m̶ ̶c̶h̶i̶ ̶t̶i̶ế̶t̶ ̶c̶á̶c̶h̶ ̶s̶ử̶ ̶d̶ụ̶n̶g̶ : 𝐁𝐎𝐓 𝐃𝐔𝐎𝐂 𝐓𝐀𝐎 𝐁𝐎𝐈 𝐀𝐃𝐌𝐈𝐍 : 𝐋𝐞𝐍𝐚𝐧𝐠𝐇𝐨𝐚𝐧𝐠𝐃𝐮𝐜 - 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 : 𝐋ê 𝐍ă𝐧𝐠 𝐇𝐨à𝐧𝐠 Đứ𝐜 - 𝐙𝐚𝐥𝐨 : 𝟎𝟑𝟒𝟓𝟑𝟒𝟒𝟖𝟐𝟔. 𝐃𝐨𝐧𝐚𝐭𝐞 𝐃𝐞 𝐂𝐨 𝐊𝐢𝐧𝐡 𝐏𝐡𝐢 𝐃𝐮𝐲 𝐓𝐫𝐢 𝐁𝐎𝐓 𝐍𝐡𝐚𝐚𝐚  ',
 		"user": "Người dùng",
         "adminGroup": "Quản trị viên nhóm",
         "adminBot": "Quản trị viên bot"
